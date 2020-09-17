@@ -57,6 +57,6 @@ lint:
         space: 'Dev'
         appName: 'cloud-sf-extension-cap-sample'
         apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
-        credentialsId: 'nidhi.murkute@sap.com'
+        credentialsId: 'globalnidhi'
 
 
