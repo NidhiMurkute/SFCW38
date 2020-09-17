@@ -8,7 +8,7 @@ general:
   productiveBranch: 'master'
 
 steps: 
-  artifactSetVersion:
+  artifactPrepareVersion:
     commitVersion: false
     timestampTemplate: '%Y%m%d%H%M%S'
   executeNpm:
