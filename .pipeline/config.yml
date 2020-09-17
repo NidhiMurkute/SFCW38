@@ -8,7 +8,7 @@ general:
   productiveBranch: 'master'
 
 steps: 
-  artifactPrepareVersion:
+  artifactSetVersion:
     commitVersion: false
     timestampTemplate: '%Y%m%d%H%M%S'
   executeNpm:
@@ -26,6 +26,8 @@ steps:
     artifactType: 'mta'
   mtaBuild:
     mtaBuildTool: "cloudMbt"    
+    
+    
 stages: 
   npmAudit:
     auditedAdvisories:
@@ -44,10 +46,10 @@ stages:
       - 1300
 lint:
   ui5BestPractices:
-      failThreshold:
-        error: 100
-        warning: 500
-        info: 1000
+    failThreshold:
+      error: 100
+      warning: 500
+      info: 1000
 
   productionDeployment: 
      cfTargets:
@@ -55,6 +57,6 @@ lint:
         space: 'Dev'
         appName: 'cloud-sf-extension-cap-sample'
         apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
-        credentialsId: 'globalnidhi'
+        credentialsId: 'nidhi.murkute@sap.com'
 
 
